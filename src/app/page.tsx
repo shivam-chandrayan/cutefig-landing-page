@@ -214,6 +214,40 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="container mx-auto px-2 max-w-6xl pt-40">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="row-span-2 flex flex-col justify-between gap-4">
+              <div>
+                <img src="https://placehold.co/500x500" alt="" />
+              </div>
+              <div>
+                <img src="https://placehold.co/100x100" alt="" />
+              </div>
+            </div>
+            <div className="col-span-2 text-4xl">
+              <h2 className="">
+                Only the best quality <br />
+                Materials and Craftsmanship
+              </h2>
+            </div>
+            <div>
+              <img src="https://placehold.co/400x500" alt="" />
+            </div>
+            <div className="flex">
+              <div>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  nostrum placeat, sequi recusandae laudantium dolor eaque
+                  perferendis sint a ut libero soluta vitae quam totam
+                </div>
+                <div>
+                  <img src="https://placehold.co/400x400" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="container mx-auto pt-10 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 max-w-xl">
