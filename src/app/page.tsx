@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LinkIcon as Thread } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import VideoShowcase from "@/components/video-showcase";
 import InfiniteScrollGallery from "@/components/infinite-scroll-gallery";
@@ -248,17 +247,131 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto pt-10 pb-20">
+        <section className="container">
+          <div className="py-10">
+            <h2 className="text-6xl mb-6 text-center">Our Best Tote Bags</h2>
+            <div id="product-list" className="grid grid-cols-4 gap-2 px-4">
+              {/* <div className="">
+                <h2 className="text-2xl font-bold mb-4">Tote Bags</h2>
+                <p className="text-gray-600 mb-6">
+                  Handcrafted tote bags for every occasion
+                </p>
+              </div> */}
+              {[
+                {
+                  id: 1,
+                  name: "Premium Tote",
+                  price: "₹999",
+                  image: "/tote-bags/tote (1).jpg",
+                },
+                {
+                  id: 2,
+                  name: "Lite Tote",
+                  price: "₹399",
+                  image: "/tote-bags/tote (2).jpg",
+                },
+                {
+                  id: 3,
+                  name: "Custom Tote",
+                  price: "₹1299",
+                  image: "/tote-bags/tote (3).jpg",
+                },
+                {
+                  id: 4,
+                  name: "Premium Tote",
+                  price: "₹999",
+                  image: "/tote-bags/tote (1).jpg",
+                },
+                {
+                  id: 5,
+                  name: "Lite Tote",
+                  price: "₹399",
+                  image: "/tote-bags/tote (2).jpg",
+                },
+                {
+                  id: 6,
+                  name: "Custom Tote",
+                  price: "₹1299",
+                  image: "/tote-bags/tote (3).jpg",
+                },
+              ].map((product) => (
+                <div
+                  key={product.id}
+                  className="transform transition-transform hover:scale-102"
+                >
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="object-cover"
+                  />
+                  {/* <div className="py-4">
+                    <h3 className="text-lg font-semibold">{product.name}</h3>
+                    <p className="text-gray-500">{product.price}</p>
+                  </div> */}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 container mx-auto">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Want a piece for yourself?
+            </h2>
+            <p className="text-gray-600 mb-8">We only take custom orders</p>
+            <Button className="mt-8 bg-rose-500 hover:bg-rose-600">
+              Place your order
+            </Button>
+          </div>
+        </section>
+
+        {/* Video Showcase Section */}
+        <VideoShowcase />
+
+        <section className="contaier pt-40">
+          <div className="grid grid-cols-2">
+            <div className="text-6xl relative">
+              <div className="flex flex-col h-full justify-center">
+                <div className="text-6xl">Hi, I'm Shivani</div>
+                <div className="text-4xl">I'll make your orders with love</div>
+              </div>
+              <div className="absolute aspect-square bottom-0 right-0 w-40">
+                <img
+                  src="https://placehold.co/300x300"
+                  alt=""
+                  className="w-full"
+                />
+              </div>
+            </div>
+            <div className="relative grid grid-cols-2">
+              <div>
+                <img
+                  src="https://placehold.co/400x400"
+                  alt=""
+                  className="w-full"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://placehold.co/400x400"
+                  alt=""
+                  className="w-full"
+                />
+              </div>
+              <div className="absolute aspect-square bottom-0 left-0 w-40 bg-blue-500">
+                View All
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <section className="container mx-auto pt-10 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 max-w-xl">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
                 Handcrafted Goodness to make you stand out!
               </h1>
-              {/* <p className="text-lg text-gray-600">
-                All designs are unique, fully costomisable and made with premium
-                materials. Our artisans take pride in their work, ensuring that
-                each bag is not just a product, but a piece of art.
-              </p> */}
               <div>
                 <Button
                   size="lg"
@@ -283,7 +396,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Infinite scroll gallery */}
             <InfiniteScrollGallery
               imagesColumn1={galleryImages1}
               imagesColumn2={galleryImages2}
@@ -291,10 +403,10 @@ export default function Home() {
               column2Speed={40}
             />
           </div>
-        </section>
+        </section> */}
 
         {/* tote bags section */}
-        <section className="h-screen flex items-center justify-center bg-[#01735C]">
+        {/* <section className="h-screen flex items-center justify-center bg-[#01735C]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full px-24">
             <div className="relative aspect-square shadow-lg overflow-hidden transform transition-transform hover:scale-[1.02]">
               <Image
@@ -336,12 +448,12 @@ export default function Home() {
                 fill
                 className="object-cover"
               />
-              {/* <div className="absolute top-6 right-10 bg-purple-100 px-4 py-2 rounded-full text-sm font-medium text-purple-700 animate-bounce">
+              <div className="absolute top-6 right-10 bg-purple-100 px-4 py-2 rounded-full text-sm font-medium text-purple-700 animate-bounce">
                 Best Seller
-              </div> */}
+              </div>
             </div>
           </div>
-          {/* <div>
+          <div>
               <h3 className="text-2xl md:text-4xl font-extrabold mt-2 text-center">
                 TOTE BAGS
               </h3>
@@ -356,10 +468,10 @@ export default function Home() {
                   Shop Tote Bags
                 </a>
               </div>
-            </div> */}
-        </section>
+            </div>
+        </section> */}
 
-        <section className="h-screen flex items-center justify-center">
+        {/* <section className="h-screen flex items-center justify-center">
           <div>
             <div className="flex gap-2">
               <div className="relative h-[30vw] w-[50vh] rounded-l-2xl shadow-lg overflow-hidden transform transition-transform hover:scale-[1.02]">
@@ -402,15 +514,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div>
+             <div>
               <h3 className="font-bold mt-2">Hand Embroidered Tote Bags</h3>
               <p className="text-gray-600">
                 Heavy weight canvas • Fully customizable • Comes with zipper.
               </p>
               <p className="text-gray-600">From ₹999</p>
-            </div> */}
+            </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="bg-rose-50 py-20">
           <div className="container mx-auto">
@@ -511,53 +623,6 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section className="py-20 container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                How does it work?
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Our intuitive design tool makes it easy to bring your vision to
-                life. Choose from hundreds of fabrics, add your artwork, or
-                select from our curated designs.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "Select your base tote style - lite or premium",
-                  "Choose your artwork and add customization",
-                  "Pay and get free delivery",
-                ].map((step, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      {index + 1}
-                    </div>
-                    <span>{step}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button className="mt-8 bg-rose-500 hover:bg-rose-600">
-                Start Designing
-              </Button>
-            </div>
-            <div className="relative">
-              <div className="absolute -top-6 left-10 bg-purple-100 px-4 py-2 rounded-full text-sm font-medium text-purple-700 animate-bounce">
-                @sarah
-              </div>
-              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <Image
-                  src="./placeholder600x400.svg"
-                  alt="Tote bag customization interface"
-                  width={500}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* Video Showcase Section */}
-        <VideoShowcase />
 
         {/* <section className="bg-gray-900 text-white py-16">
           <div className="container text-center">
