@@ -76,11 +76,13 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Thread className="h-6 w-6 text-rose-500" />
-            <span className="text-xl font-semibold">CuteFig</span>
-          </div>
+        <div className="flex items-start justify-between">
+          <Image
+            src={"/logo.svg"}
+            alt="CuteFig Logo"
+            width={100}
+            height={100}
+          />
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="#"
@@ -122,6 +124,96 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
+        {/* Hero Section */}
+        <section className="container mx-auto px-2">
+          <div className="flex flex-col items-center justify-between gap-8 py-10">
+            <div className="flex flex-col items-center gap-4">
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                We Make Unique
+              </h1>
+              <div className="flex items-center justify-between gap-2">
+                <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                  Completely
+                </h1>
+                <Image
+                  src={"/tote-bags/tote (3).jpg"}
+                  alt="hero img"
+                  width={250}
+                  height={50}
+                ></Image>
+                <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                  Customisable
+                </h1>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                Fashion Accessories
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        {/* <section>
+          <GridWithBorders />
+        </section> */}
+
+        <section>
+          <div className="grid grid-cols-20 gap-2 p-4">
+            <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+            <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+            <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2"></div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl col-span-4 row-span-2 bg-[url(https://placehold.co/300x150)] bg-center">
+              6
+            </div>
+            <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              7
+            </div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-full"></div>
+            <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              10
+            </div>
+            <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              11
+            </div>
+            <div className="bg-[#50d71e] rounded-full row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+              12
+            </div>
+            <div className="bg-[#50d71e] rounded-full">13 - 1</div>
+            <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+              13
+            </div>
+            <div className="bg-[#E94F37] aspect-square rounded-full col-span-2 row-span-2">
+              14
+            </div>
+            <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+              15
+            </div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+              17
+            </div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              21
+            </div>
+            <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              22
+            </div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+              24
+            </div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+            <div className="bg-[#50d71e] rounded-full">27</div>
+            <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+          </div>
+        </section>
+
         <section className="container mx-auto pt-10 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 max-w-xl">
@@ -470,7 +562,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl">
               <h3 className="text-xl font-semibold">Support</h3>
               <p>
-                Have questions?{" "}
+                Having questions?{" "}
                 <Link href="#" className="underline">
                   Get in touch
                 </Link>{" "}
