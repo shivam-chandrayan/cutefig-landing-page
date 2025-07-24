@@ -1,9 +1,14 @@
 import type React from "react";
 import "@/app/globals.css";
-import { Inter } from "next/font/google";
+import { Inter, MuseoModerno } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const museoModerno = MuseoModerno({
+  subsets: ["latin"],
+  variable: "--font-museo-moderno",
+});
 
 export const metadata = {
   title: "StitchCraft - Handmade Custom Tote Bags",
@@ -18,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${museoModerno.className}`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>
