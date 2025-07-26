@@ -21,55 +21,55 @@ const videoData = [
     title: "The Floral Collection",
     subtitle: "2023 • Hand-embroidered • 3 styles",
     category: "Making Of",
-    imageSrc: "/placeholder.svg?height=500&width=280",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 2,
     title: "Canvas Essentials",
     subtitle: "2023 • Eco-friendly • 5 styles",
     category: "Tutorial",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 3,
     title: "Leather Handle Series",
     subtitle: "2022 • Premium • 2 styles",
     category: "Making Of",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 4,
     title: "Pattern Design Process",
     subtitle: "2023 • Custom • 4 styles",
     category: "Behind the Scenes",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 5,
     title: "Eco-Friendly Collection",
     subtitle: "2023 • Sustainable • 6 styles",
     category: "New Release",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 6,
     title: "Summer Totes",
     subtitle: "2023 • Seasonal • 4 styles",
     category: "Featured",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
   {
     id: 7,
     title: "Artisan Techniques",
     subtitle: "2022 • Masterclass • 3 videos",
     category: "Tutorial",
-    imageSrc: "/placeholder.svg?height=450&width=250",
+    imageSrc: "/tote-bags/vid1.png",
   },
 ];
 
 export default function VideoShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [touchStart, setTouchStart] = useState(0);
   const autoPlayTimerRef = useRef<NodeJS.Timeout | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -156,14 +156,12 @@ export default function VideoShowcase() {
   return (
     <div className="pt-40 bg-gray-50">
       <div className="container mx-auto">
-        <div className="text-center mb-12 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Watch our creations come to life
-          </h2>
-          <p className="text-gray-600">
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-6xl font-semibold">The Process/Art/BTS</h2>
+          {/* <p className="text-gray-600 text-lg font-extralight">
             See our artisans at work and discover the stories behind our
             handcrafted tote bags.
-          </p>
+          </p> */}
 
           {/* <div className="flex flex-wrap justify-center gap-3 mt-8">
             <button className="bg-rose-500 text-white px-6 py-2 rounded-full text-sm font-medium">
@@ -183,7 +181,7 @@ export default function VideoShowcase() {
 
         <div
           ref={containerRef}
-          className="relative h-[600px] flex items-center justify-center my-16"
+          className="relative h-[600px] flex items-center justify-center mt-4"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -196,10 +194,9 @@ export default function VideoShowcase() {
               onClick={() => index !== activeIndex && setActiveIndex(index)}
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[9/16] bg-rose-100">
-                <div className="absolute top-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1">
-                  <Scissors className="h-3 w-3" />
+                {/* <div className="absolute top-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded-md flex items-center gap-1">
                   <span>{video.category}</span>
-                </div>
+                </div> */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-12 h-12 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center">
                     <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center">
@@ -237,7 +234,7 @@ export default function VideoShowcase() {
           ))}
 
           {/* Video navigation controls */}
-          <div className="absolute bottom-[-70px] left-0 right-0 flex justify-center items-center gap-4">
+          {/* <div className="absolute bottom-[-70px] left-0 right-0 flex justify-center items-center gap-4">
             <Button
               variant="outline"
               size="icon"
@@ -285,16 +282,16 @@ export default function VideoShowcase() {
               <ChevronRight className="h-5 w-5" />
               <span className="sr-only">Next video</span>
             </Button>
-          </div>
+          </div> */}
 
           {/* Auto-shuffle indicator */}
-          {isAutoPlaying && (
+          {/* {isAutoPlaying && (
             <div className="absolute bottom-[-40px] left-0 right-0 flex justify-center">
               <div className="bg-rose-100 text-rose-600 text-xs px-3 py-1 rounded-full">
                 Auto-shuffling every 3 seconds
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Swipe instruction for mobile */}
           <div className="absolute top-[-30px] left-0 right-0 text-center text-sm text-gray-500 md:hidden">

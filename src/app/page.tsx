@@ -13,8 +13,8 @@ export default function Home() {
             width={100}
             height={100}
           />
-          <nav className="hidden md:flex items-center gap-8">
-            <Link
+          <nav className="flex items-center justify-center">
+            {/* <Link
               href="#"
               className="text-sm font-medium hover:text-rose-500 transition-colors"
             >
@@ -43,12 +43,12 @@ export default function Home() {
               className="text-sm font-medium hover:text-rose-500 transition-colors"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
-              href="#"
-              className="text-sm font-medium border border-gray-300 rounded-full px-6 py-2 hover:text-rose-500 hover:border-rose-500 transition-colors"
+              href="#placeOrderSection"
+              className="text-sm bg-[#633F61] font-medium text-white rounded-full px-6 py-2 hover:bg-[#80517E] hover:border hover:border-[#633F61] focus:outline-2 focus:outline-offset-2 focus:outline-[#572F55] focus:bg-[#572F55] transition-colors"
             >
-              Contact
+              Place Order
             </Link>
           </nav>
         </div>
@@ -58,12 +58,12 @@ export default function Home() {
         <section className="flex flex-col min-h-screen justify-end">
           <section className="container flex-1 flex items-center justify-center">
             <div className="flex flex-col items-center justify-between gap-8">
-              <div className="flex flex-col items-center gap-4 font-museomoderno">
-                <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight font-museomoderno">
+              <div className="flex flex-col items-center font-museomoderno">
+                <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight font-museomoderno">
                   We Make Unique
                 </h1>
                 <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-                  <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                  <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
                     Completely
                   </h1>
                   <Image
@@ -71,12 +71,13 @@ export default function Home() {
                     alt="hero img"
                     width={250}
                     height={50}
+                    className="mx-4"
                   ></Image>
-                  <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                  <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
                     Customisable
                   </h1>
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+                <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
                   Fashion Accessories
                 </h1>
               </div>
@@ -153,8 +154,8 @@ export default function Home() {
                 <img src="https://placehold.co/100x100" alt="" />
               </div>
             </div>
-            <div className="col-span-2 text-4xl">
-              <h2 className="font-museomoderno">
+            <div className="col-span-2">
+              <h2 className="text-4xl font-semibold">
                 Only the best quality <br />
                 Materials and Craftsmanship
               </h2>
@@ -162,16 +163,14 @@ export default function Home() {
             <div>
               <img src="https://placehold.co/400x500" alt="" />
             </div>
-            <div className="flex">
+            <div className="flex flex-col gap-4">
+              <p className="font-outfit text-lg text-gray-600 font-extralight">
+                Each piece is made after you order, with quality materials and
+                attention to detail. It's made to last and every item a little
+                different every time. No two are exactly the same.
+              </p>
               <div>
-                <p className="font-outfit">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  nostrum placeat, sequi recusandae laudantium dolor eaque
-                  perferendis sint a ut libero soluta vitae quam totam
-                </p>
-                <div>
-                  <img src="https://placehold.co/400x400" alt="" />
-                </div>
+                <img src="https://placehold.co/400x400" alt="" />
               </div>
             </div>
           </div>
@@ -179,7 +178,9 @@ export default function Home() {
 
         <section className="container min-h-screen">
           <div className="pt-40">
-            <h2 className="text-6xl mb-6 text-center">Our Best Tote Bags</h2>
+            <h2 className="text-6xl font-semibold mb-6 text-center">
+              Our Best Tote Bags
+            </h2>
             <div id="product-list" className="grid grid-cols-4 gap-2 px-4">
               {/* <div className="">
                 <h2 className="text-2xl font-bold mb-4">Tote Bags</h2>
@@ -247,18 +248,59 @@ export default function Home() {
         {/* Video Showcase Section */}
         <VideoShowcase />
 
-        <section className="container pt-40 flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <section
+          className="container pt-30 flex flex-col items-center justify-center"
+          id="placeOrderSection"
+        >
+          <div className="flex flex-col items-center p-4">
+            <h2 className="text-6xl font-semibold mb-2">
               Want a piece for yourself?
             </h2>
-            <p className="font-bold">We only take custom orders.</p>
+            <p className="text-3xl font-extralight">
+              We only take custom orders.
+            </p>
 
-            <ul className="text-gray-600">
-              <li>Only handmade items</li>
-              <li>Customise as per your liking</li>
-              <li>No charges till you're happy with the design</li>
-            </ul>
+            <div className="text-lg text-gray-600 font-extralight my-8">
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    fill="#63E6BE"
+                    d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7C411.4 265.5 408 250.7 396.8 243.6C385.6 236.5 370.8 240 363.7 251.2L302.3 349.5L275.3 313.5C267.3 302.9 252.3 300.7 241.7 308.7C231.1 316.7 228.9 331.7 236.9 342.3L284.9 406.3C289.6 412.6 297.2 416.2 305.1 415.9C313 415.6 320.2 411.4 324.4 404.6L404.4 276.6z"
+                  />
+                </svg>
+                <span>Only handmade items</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    fill="#63E6BE"
+                    d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7C411.4 265.5 408 250.7 396.8 243.6C385.6 236.5 370.8 240 363.7 251.2L302.3 349.5L275.3 313.5C267.3 302.9 252.3 300.7 241.7 308.7C231.1 316.7 228.9 331.7 236.9 342.3L284.9 406.3C289.6 412.6 297.2 416.2 305.1 415.9C313 415.6 320.2 411.4 324.4 404.6L404.4 276.6z"
+                  />
+                </svg>
+                <span>Customise as per your liking</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    fill="#63E6BE"
+                    d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7C411.4 265.5 408 250.7 396.8 243.6C385.6 236.5 370.8 240 363.7 251.2L302.3 349.5L275.3 313.5C267.3 302.9 252.3 300.7 241.7 308.7C231.1 316.7 228.9 331.7 236.9 342.3L284.9 406.3C289.6 412.6 297.2 416.2 305.1 415.9C313 415.6 320.2 411.4 324.4 404.6L404.4 276.6z"
+                  />
+                </svg>
+                <span>No charges till you're happy with the design</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-4 grid-cols-auto">
@@ -268,7 +310,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="aspect-square flex flex-col items-center justify-center gap-2 bg-[#25D366] shadow-md p-2 transform transition-transform hover:scale-102">
+                <div className="flex flex-col items-center justify-center gap-2 bg-[#25D366] shadow-md p-2 transform transition-transform hover:scale-102">
                   {/* <div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +331,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="aspect-square flex flex-col items-center justify-center gap-2 bg-[#FF0069] shadow-md p-2 transform transition-transform hover:scale-102">
+                <div className="flex flex-col items-center justify-center gap-2 bg-[#FF0069] shadow-md p-2 transform transition-transform hover:scale-102">
                   {/* <div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +352,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="aspect-square flex flex-col items-center justify-center gap-2 bg-[#4267B2] shadow-md p-2 transform transition-transform hover:scale-102">
+                <div className="flex flex-col items-center justify-center gap-2 bg-[#4267B2] shadow-md p-2 transform transition-transform hover:scale-102">
                   {/* <div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +373,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="aspect-square flex flex-col items-center justify-center gap-2 bg-[#000] shadow-md p-2 transform transition-transform hover:scale-102">
+                <div className="flex flex-col items-center justify-center gap-2 bg-[#000] shadow-md p-2 transform transition-transform hover:scale-102">
                   {/* <div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -396,8 +438,10 @@ export default function Home() {
           <div className="relative h-screen flex items-center justify-center">
             <div className="absolute z-1 w-2/3 aspect-2/1 bg-blue-200 flex items-center left-0 p-20 m-20">
               <div className="w-1/2">
-                <h3 className="text-6xl">Hi, I'm Shivani</h3>
-                <p className="text-4xl">I'll be making your orders with love</p>
+                <h3 className="text-6xl font-semibold">Hi, I'm Shivani</h3>
+                <p className="text-4xl font-extralight mt-4">
+                  I'll be making your orders with love 💖
+                </p>
               </div>
             </div>
             <div className="absolute z-10 w-1/2 grid grid-cols-2 right-0 m-20">
