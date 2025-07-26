@@ -20,7 +20,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        museoModerno: ["var(--font-museo-moderno)", "sans-serif"],
+        museomoderno: "var(--font-museo-moderno)",
+        outfit: "var(--font-outfit)",
       },
       colors: {
         border: "hsl(var(--border))",

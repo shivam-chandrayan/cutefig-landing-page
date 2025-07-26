@@ -154,7 +154,7 @@ export default function VideoShowcase() {
   }, [isAutoPlaying]);
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="pt-40 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -302,11 +302,11 @@ export default function VideoShowcase() {
           </div>
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <Button variant="outline" size="lg" className="mt-16">
             View All Videos
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

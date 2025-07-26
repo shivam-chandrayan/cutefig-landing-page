@@ -1,13 +1,18 @@
 import type React from "react";
 import "@/app/globals.css";
-import { Inter, MuseoModerno } from "next/font/google";
+import { Inter, MuseoModerno, Outfit } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 const museoModerno = MuseoModerno({
   subsets: ["latin"],
   variable: "--font-museo-moderno",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
 });
 
 export const metadata = {
@@ -23,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${museoModerno.className}`}>
+      <body className={`${outfit.variable} ${museoModerno.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>
