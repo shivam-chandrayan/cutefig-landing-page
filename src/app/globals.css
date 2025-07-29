@@ -116,12 +116,25 @@ body {
   }
 }
 
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-101%));
+  }
+}
+
 .animate-scroll-down {
   animation: scrollDown linear infinite;
 }
 
 .animate-scroll-up {
   animation: scrollUp linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scrollLeft linear infinite;
 }
 
 @theme inline {

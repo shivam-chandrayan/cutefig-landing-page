@@ -12,41 +12,12 @@ export default function Home() {
             alt="CuteFig Logo"
             width={100}
             height={100}
+            className="w-1/5 md:w-1/4 lg:w-1/6"
           />
           <nav className="flex items-center justify-center">
-            {/* <Link
-              href="#"
-              className="text-sm font-medium hover:text-rose-500 transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium hover:text-rose-500 transition-colors"
-            >
-              Shop
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium hover:text-rose-500 transition-colors"
-            >
-              Customize
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium hover:text-rose-500 transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium hover:text-rose-500 transition-colors"
-            >
-              Blog
-            </Link> */}
             <Link
               href="#placeOrderSection"
-              className="text-sm bg-[#633F61] font-medium text-white rounded-full px-6 py-2 hover:bg-[#80517E] hover:border hover:border-[#633F61] focus:outline-2 focus:outline-offset-2 focus:outline-[#572F55] focus:bg-[#572F55] transition-colors"
+              className="text-xs md:text-sm bg-[#633F61] font-medium text-white rounded-full px-6 py-2 hover:bg-[#80517E] hover:border hover:border-[#633F61] focus:outline-2 focus:outline-offset-2 focus:outline-[#572F55] focus:bg-[#572F55] transition-colors"
             >
               Place Order
             </Link>
@@ -56,14 +27,14 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="flex flex-col min-h-screen justify-end">
-          <section className="container flex-1 flex items-center justify-center">
+          <section className="flex-1 flex items-center justify-center">
             <div className="flex flex-col items-center justify-between gap-8">
               <div className="flex flex-col items-center font-museomoderno">
-                <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight font-museomoderno">
+                <h1 className="text-3xl md:text-7xl font-semibold tracking-tight leading-tight font-museomoderno">
                   We Make Unique
                 </h1>
                 <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-                  <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
+                  <h1 className="text-3xl md:text-7xl font-semibold tracking-tight leading-tight">
                     Completely
                   </h1>
                   <Image
@@ -73,11 +44,11 @@ export default function Home() {
                     height={50}
                     className="mx-4"
                   ></Image>
-                  <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
+                  <h1 className="text-3xl md:text-7xl font-semibold tracking-tight leading-tight">
                     Customisable
                   </h1>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-tight">
+                <h1 className="text-3xl md:text-7xl font-semibold tracking-tight leading-tight">
                   Fashion Accessories
                 </h1>
               </div>
@@ -85,68 +56,249 @@ export default function Home() {
           </section>
 
           {/* grid gallary display */}
-          <section>
-            <div className="grid grid-cols-20 gap-2 p-4">
-              <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
-              <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
-              <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2"></div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl col-span-4 row-span-2 bg-[url(https://placehold.co/300x150)] bg-center">
-                6
+          <section className="md:hidden">
+            <div className="w-full overflow-hidden">
+              <div
+                className="flex animate-scroll-left"
+                style={{
+                  animationDuration: `10s`,
+                }}
+              >
+                {/* first grid */}
+                <div className="grid grid-cols-8 gap-2 px-2 min-w-screen">
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    1
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    2
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2">
+                    3
+                  </div>
+                  <div className="bg-[#50d71e] row-span-2 rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    4
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full bg-[url(https://placehold.co/100x100)] bg-center">
+                    5
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/300x150)] bg-center">
+                    6
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    7
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    8
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full aspect-square">
+                    9
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full aspect-square col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    10
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    11
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x150)] bg-center">
+                    12
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    13
+                  </div>
+                  <div className="bg-[#E94F37] rounded-xl col-span-2">14</div>
+                  <div className="bg-[#E94F37] rounded-xl">15</div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    16
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    17
+                  </div>
+                </div>
+
+                {/* duplicate grid */}
+                <div className="grid grid-cols-8 gap-2 min-w-screen">
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    1
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    2
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2">
+                    3
+                  </div>
+                  <div className="bg-[#50d71e] row-span-2 rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    4
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full bg-[url(https://placehold.co/100x100)] bg-center">
+                    5
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/300x150)] bg-center">
+                    6
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    7
+                  </div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    8
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full aspect-square">
+                    9
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full aspect-square col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    10
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/150x100)] bg-center">
+                    11
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x150)] bg-center">
+                    12
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    13
+                  </div>
+                  <div className="bg-[#E94F37] rounded-xl col-span-2">14</div>
+                  <div className="bg-[#E94F37] rounded-xl">15</div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center">
+                    16
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    17
+                  </div>
+                </div>
               </div>
-              <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                7
+            </div>
+          </section>
+          <section className="hidden md:block">
+            <div className="w-full overflow-hidden">
+              <div
+                className="flex animate-scroll-left"
+                style={
+                  {
+                    // animationDuration: `10s`,
+                  }
+                }
+              >
+                {/* first grid */}
+                <div className="grid grid-cols-20 gap-2 px-2 min-w-screen">
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-4 row-span-2 bg-[url(https://placehold.co/300x150)] bg-center">
+                    6
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    7
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-full"></div>
+                  <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    10
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    11
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    12
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full">13 - 1</div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    13
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-full col-span-2 row-span-2">
+                    14
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    15
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    17
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    21
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    22
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    24
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-full">27</div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                </div>
+
+                {/* duplicate grid */}
+                <div className="grid grid-cols-20 gap-2 min-w-screen">
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] aspect-square rounded-xl col-span-2 row-span-2 bg-[url(https://placehold.co/150x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] aspect-square rounded-full col-span-2 row-span-2"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-4 row-span-2 bg-[url(https://placehold.co/300x150)] bg-center">
+                    6
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    7
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-full"></div>
+                  <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    10
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    11
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    12
+                  </div>
+                  <div className="bg-[#50d71e] rounded-full">13 - 1</div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    13
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-full col-span-2 row-span-2">
+                    14
+                  </div>
+                  <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
+                    15
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
+                    17
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    21
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    22
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
+                    24
+                  </div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                  <div className="bg-[#50d71e] rounded-full">27</div>
+                  <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
+                </div>
               </div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-full"></div>
-              <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                10
-              </div>
-              <div className="bg-[#50d71e] rounded-full col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                11
-              </div>
-              <div className="bg-[#50d71e] rounded-full row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
-                12
-              </div>
-              <div className="bg-[#50d71e] rounded-full">13 - 1</div>
-              <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
-                13
-              </div>
-              <div className="bg-[#E94F37] aspect-square rounded-full col-span-2 row-span-2">
-                14
-              </div>
-              <div className="bg-[#E94F37] aspect-square rounded-xl col-span-2 row-span-2">
-                15
-              </div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl row-span-2 bg-[url(https://placehold.co/100x150)] bg-center">
-                17
-              </div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                21
-              </div>
-              <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                22
-              </div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl col-span-2 bg-[url(https://placehold.co/150x100)] bg-center">
-                24
-              </div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
-              <div className="bg-[#50d71e] rounded-full">27</div>
-              <div className="bg-[#50d71e] rounded-xl bg-[url(https://placehold.co/100x100)] bg-center"></div>
             </div>
           </section>
         </section>
 
-        <section className="container min-h-screen flex items-center justify-center pt-40">
-          <div className="grid grid-cols-3 gap-4 max-w-6xl">
-            <div className="row-span-2 flex flex-col justify-between gap-4">
+        <section className="min-h-screen flex items-center justify-center pt-40 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl">
+            <div className="hidden md:block row-span-2 flex flex-col justify-between gap-4">
               <div>
                 <img src="https://placehold.co/500x500" alt="" />
               </div>
@@ -154,34 +306,38 @@ export default function Home() {
                 <img src="https://placehold.co/100x100" alt="" />
               </div>
             </div>
-            <div className="col-span-2">
-              <h2 className="text-4xl font-semibold">
+            <div className="md:col-span-2">
+              <h2 className="text-2xl md:text-4xl font-semibold">
                 Only the best quality <br />
                 Materials and Craftsmanship
               </h2>
             </div>
-            <div>
+            <div className="hidden md:block">
               <img src="https://placehold.co/400x500" alt="" />
             </div>
             <div className="flex flex-col gap-4">
-              <p className="font-outfit text-lg text-gray-600 font-extralight">
+              <p className="font-outfit text-sm md:text-lg text-gray-600 font-extralight">
                 Each piece is made after you order, with quality materials and
                 attention to detail. It's made to last and every item a little
                 different every time. No two are exactly the same.
               </p>
-              <div>
+              <div className="grid grid-cols-2 gap-2">
                 <img src="https://placehold.co/400x400" alt="" />
+                <img src="https://placehold.co/400x500" alt="" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="container min-h-screen">
+        <section className="min-h-screen">
           <div className="pt-40">
-            <h2 className="text-6xl font-semibold mb-6 text-center">
-              Our Best Tote Bags
+            <h2 className="text-3xl md:text-6xl font-semibold mb-6 text-center">
+              Our Best So Far
             </h2>
-            <div id="product-list" className="grid grid-cols-4 gap-2 px-4">
+            <div
+              id="product-list"
+              className="grid grid-cols-2 md:grid-cols-4 gap-2 px-4"
+            >
               {/* <div className="">
                 <h2 className="text-2xl font-bold mb-4">Tote Bags</h2>
                 <p className="text-gray-600 mb-6">
@@ -225,6 +381,18 @@ export default function Home() {
                   price: "₹1299",
                   image: "https://placehold.co/400x400",
                 },
+                {
+                  id: 7,
+                  name: "Custom Tote",
+                  price: "₹1299",
+                  image: "https://placehold.co/400x400",
+                },
+                {
+                  id: 8,
+                  name: "Custom Tote",
+                  price: "₹1299",
+                  image: "https://placehold.co/400x400",
+                },
               ].map((product) => (
                 <div
                   key={product.id}
@@ -233,7 +401,7 @@ export default function Home() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="object-cover"
+                    className="w-full"
                   />
                   {/* <div className="py-4">
                     <h3 className="text-lg font-semibold">{product.name}</h3>
@@ -246,21 +414,21 @@ export default function Home() {
         </section>
 
         {/* Video Showcase Section */}
-        <VideoShowcase />
+        {/* <VideoShowcase /> */}
 
         <section
-          className="container pt-30 flex flex-col items-center justify-center"
+          className="pt-30 flex flex-col items-center justify-center"
           id="placeOrderSection"
         >
           <div className="flex flex-col items-center p-4">
-            <h2 className="text-6xl font-semibold mb-2">
+            <h2 className="text-3xl md:text-6xl font-semibold mb-2">
               Want a piece for yourself?
             </h2>
-            <p className="text-3xl font-extralight">
+            <p className="text-xl md:text-3xl font-extralight">
               We only take custom orders.
             </p>
 
-            <div className="text-lg text-gray-600 font-extralight my-8">
+            <div className="text-sm md:text-lg text-gray-600 font-extralight my-8">
               <div className="flex items-center gap-2">
                 <svg
                   className="w-8"
@@ -303,8 +471,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 grid-cols-auto">
-            <div className="grid grid-cols-4 gap-1 col-span-2 col-start-2">
+          <div className="flex items-center justify-center mx-2">
+            <div className="grid grid-cols-4 gap-1">
               <a
                 href="https://wa.me/919999999999"
                 target="_blank"
@@ -323,7 +491,9 @@ export default function Home() {
                     />
                   </svg>
                   {/* </div> */}
-                  <div className="text-white">Order on WhatsApp</div>
+                  <div className="text-white text-center">
+                    Order on WhatsApp
+                  </div>
                 </div>
               </a>
               <a
@@ -344,7 +514,9 @@ export default function Home() {
                     />
                   </svg>
                   {/* </div> */}
-                  <div className="text-white">Order on Instagram</div>
+                  <div className="text-white text-center">
+                    Order on Instagram
+                  </div>
                 </div>
               </a>
               <a
@@ -365,7 +537,9 @@ export default function Home() {
                     />
                   </svg>
                   {/* </div> */}
-                  <div className="text-white">Order on Facebook</div>
+                  <div className="text-white text-center">
+                    Order on Facebook
+                  </div>
                 </div>
               </a>
               <a
@@ -373,7 +547,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex flex-col items-center justify-center gap-2 bg-[#000] shadow-md p-2 transform transition-transform hover:scale-102">
+                <div className="flex flex-col items-center justify-center gap-2 bg-[#000] h-full shadow-md p-2 transform transition-transform hover:scale-102">
                   {/* <div> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +560,7 @@ export default function Home() {
                     />
                   </svg>
                   {/* </div> */}
-                  <div className="text-white">X (Twitter)</div>
+                  <div className="text-white text-center">X (Twitter)</div>
                 </div>
               </a>
             </div>
@@ -434,27 +608,30 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section className="container">
-          <div className="relative h-screen flex items-center justify-center">
-            <div className="absolute z-1 w-2/3 aspect-2/1 bg-blue-200 flex items-center left-0 p-20 m-20">
-              <div className="w-1/2">
-                <h3 className="text-6xl font-semibold">Hi, I'm Shivani</h3>
-                <p className="text-4xl font-extralight mt-4">
+        <section className="">
+          <div className="relative h-screen flex flex-col md:flex-row items-center justify-center">
+            <div className="md:absolute z-1 md:w-2/3 md:aspect-2/1 md:bg-blue-200 flex items-center md:left-0 md:p-20 md:m-20">
+              <div className="md:w-1/2">
+                <h3 className="text-3xl md:text-6xl text-center md:text-left font-semibold">
+                  Hi, I'm Shivani
+                </h3>
+                <p className="text-xl md:text-4xl text-center md:text-left font-extralight md:mt-4">
                   I'll be making your orders with love 💖
                 </p>
               </div>
             </div>
-            <div className="absolute z-10 w-1/2 grid grid-cols-2 right-0 m-20">
+            <div className="md:absolute z-10 md:w-1/2 grid grid-cols-2 gap-2 md:gap-2 md:right-0 m-2 md:m-20">
               <div>
                 <img
-                  src="https://placehold.co/400x400"
+                  // src="https://placehold.co/400x400"
+                  src="https://picsum.photos/400"
                   alt=""
                   className="w-full"
                 />
               </div>
               <div>
                 <img
-                  src="https://placehold.co/400x400"
+                  src="https://picsum.photos/seed/sadfee3/400"
                   alt=""
                   className="w-full"
                 />
@@ -527,7 +704,7 @@ export default function Home() {
       </footer> */}
 
       <footer className="px-12 pb-20">
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="col-span-2">
             <a href="">
               <img
