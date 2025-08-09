@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import VideoShowcase from "@/components/video-showcase";
+// import VideoShowcase from "@/components/video-showcase";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
             alt="CuteFig Logo"
             width={100}
             height={100}
-            className="w-1/5 md:w-1/4 lg:w-1/6"
+            className="w-1/5 md:w-1/8 lg:w-1/14"
           />
           <nav className="flex items-center justify-center">
             <Link
@@ -318,8 +318,8 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <p className="font-outfit text-sm md:text-lg text-gray-600 font-extralight">
                 Each piece is made after you order, with quality materials and
-                attention to detail. It's made to last and every item a little
-                different every time. No two are exactly the same.
+                attention to detail. It&apos;s made to last and every item a
+                little different every time. No two are exactly the same.
               </p>
               <div className="grid grid-cols-2 gap-2">
                 <img src="https://placehold.co/400x400" alt="" />
@@ -466,7 +466,7 @@ export default function Home() {
                     d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM404.4 276.7C411.4 265.5 408 250.7 396.8 243.6C385.6 236.5 370.8 240 363.7 251.2L302.3 349.5L275.3 313.5C267.3 302.9 252.3 300.7 241.7 308.7C231.1 316.7 228.9 331.7 236.9 342.3L284.9 406.3C289.6 412.6 297.2 416.2 305.1 415.9C313 415.6 320.2 411.4 324.4 404.6L404.4 276.6z"
                   />
                 </svg>
-                <span>No charges till you're happy with the design</span>
+                <span>No charges till you&apos;re happy with the design</span>
               </div>
             </div>
           </div>
@@ -613,10 +613,10 @@ export default function Home() {
             <div className="md:absolute z-1 md:w-2/3 md:aspect-2/1 md:bg-blue-200 flex items-center md:left-0 md:p-20 md:m-20">
               <div className="md:w-1/2">
                 <h3 className="text-3xl md:text-6xl text-center md:text-left font-semibold">
-                  Hi, I'm Shivani
+                  Hi, I&apos;m Shivani
                 </h3>
                 <p className="text-xl md:text-4xl text-center md:text-left font-extralight md:mt-4">
-                  I'll be making your orders with love 💖
+                  I&apos;ll be making your orders with love 💖
                 </p>
               </div>
             </div>
